@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Flowcharts_Practice1 {
-    //q1 Input a year and find whether it is a leap year or not.
+    //q1 Input a year and find whether it is a leap year or not
     public static void main(String[] args) {
         int year;
         Scanner sc = new Scanner(System.in);
