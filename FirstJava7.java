@@ -11,12 +11,22 @@ public class FirstJava7 {
         n = sc.nextInt();
         sc.close();
         System.out.println("The fibonacci series till " + n + " terms is: ");
-        for (i = 1; i <= n; i++) {
-            System.out.println(a + " ");
-            //the result of terms a and b is stored in c, which is used for calculating the next term
-            int c = a+b;
-            a=b;
-            b=c;
+        // for (i = 1; i <= n; i++) {
+        //     System.out.println(a + " ");
+        //     //the result of terms a and b is stored in c, which is used for calculating the next term
+        //     int c = a+b;
+        //     a=b;
+        //     b=c;
+        //more optimized and concised code- PRINT VALUES OF FIRST 2 FIBONACCI TERMS OUTSIDE THE LOOP 
+        System.out.print(a + " " + b + " ");
+
+        for (i = 3; i <= n; i++) {
+            int next = a + b;
+            System.out.print(next + " ");
+
+            // Update prev and current for the next iteration
+            a = b;
+            b = next;
         }
         
     }
