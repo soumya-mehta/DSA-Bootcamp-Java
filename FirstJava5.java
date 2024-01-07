@@ -10,10 +10,11 @@ public class FirstJava5 {
         if (a > b) {
             System.out.println("The greater number is " + a);
         }
-        if (a < b) {
+            // else if and else because conditions are mutually exclusive
+        else if (a < b) {
             System.out.println("The greater number is " + b);
         }
-        if (a == b) {
+        else (a == b) {
             System.out.println("The numbers are equal");
         }
         sc.close();
